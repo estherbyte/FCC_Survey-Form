@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ecstasy's Dance Class</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">Registration Form</h1>
+            <p id="description" class="text-center description">please fill out this form with the required information
+            </p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label for="name" id="name-label">First Name: </label>
+                <input id="name" name="first-name" class="form-control" type="text" placeholder="Enter your first name"
+                    required />
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name: </label>
+                <input id="last-name" name="last-name" class="form-control" type="text"
+                    placeholder="Enter your last name" required />
+            </div>
+            <div class="form-group">
+                <label for="email" id="email-label">Email: </label>
+                <input id="email" name="email" class="form-control" type="email" placeholder="Email" required />
+            </div>
+            <div class="form-group">
+                <label for="number" id="number-label">Number</label>
+                <input id="number" class="form-control" type="number" min="1" max="99" placeholder="number">
+            </div>
+            <div class="form-group">
+                <div>
+                    <p>Gender</p>
+                </div>
+                <label><input type="radio" name="gender" value="male" class="input-radio">Male</label>
+                <label><input type="radio" name="gender" value="female" class="input-radio">Female</label>
+            </div>
+            <div class="form-group">
+                <label for="referrer" id="referrer">How did you hear about us?
+                </label>
+                <select id="dropdown" class="form-control">
+                    <option value="">(select one)</option>
+                    <option value="1">Ecstasy's Dance News</option>
+                    <option value="2">Ecstasy's YouTube Channel</option>
+                    <option value="3">Others</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>What Would You Like To See Improved?</p>
+                <div><label><input type="checkbox" value="Flexibility" class="input-checkbox"
+                            name="Abilities">Flexibility</label>
+                </div>
+                <div><label><input type="checkbox" value="Balance" class="input-checkbox"
+                            name="Abilities">Balance</label>
+                </div>
+                <div><label><input type="checkbox" value="Versatile Knowledge" class="input-checkbox"
+                            name="Abilities">Versatile
+                        Knowledge</label></div>
+                <div><label><input type="checkbox" value="Challenges" class="input-checkbox"
+                            name="Abilities">Challenges</label></div>
+            </div>
+            <div class="form-group">
+                <label>Bio</label>
+                <textarea id="bio" class="input-textarea" name="bio" rows="3" cols="30"
+                    placeholder="I use dance to express my deepest emotions..."></textarea>
+                <button type="submit" id="submit" type="submit" class="submit-button">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
